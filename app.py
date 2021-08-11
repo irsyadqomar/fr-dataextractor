@@ -10,8 +10,8 @@ from filters import datetimeformat, file_type
 
 
 S3_BUCKET                 = ("iqmscproject")
-AWS_KEY                    = os.environ.get("AWS_ACCESS_KEY")
-AWS_SECRET                 = os.environ.get("AWS_SECRET_KEY")
+AWS_KEY                    = os.environ['AWS_ACCESS_KEY']
+AWS_SECRET                 = os.environ['AWS_SECRET_KEY']
 AWS_LOCATION               = 'http://{}.s3.amazonaws.com/'.format(S3_BUCKET)
 
 
