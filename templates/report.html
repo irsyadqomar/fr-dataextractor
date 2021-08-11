@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Report Page</h2>
+<div>
+
+<h2>Generate CSV Report File Here</h2>
+<p>
+ <a href="{{ url_for('download_report') }}">Generate CSV Report File</a>
+</p>
+</div>
+
+{% endblock %}
