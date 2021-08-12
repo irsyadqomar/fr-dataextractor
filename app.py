@@ -10,15 +10,15 @@ from filters import datetimeformat, file_type
 
 
 S3_BUCKET                 = ("iqmscproject")
-AWS_KEY                    = os.environ['AWS_ACCESS_KEY']
-AWS_SECRET                 = os.environ['AWS_SECRET_KEY']
+AWS_ACCESS_KEY_ID                   = os.environ['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY                = os.environ['AWS_SECRET_ACCESS_KEY']
 AWS_LOCATION               = 'http://{}.s3.amazonaws.com/'.format(S3_BUCKET)
 
 
 s3 = boto3.client(
    "s3",
-   aws_access_key_id=AWS_KEY,
-   aws_secret_access_key=AWS_SECRET
+   aws_access_key_id=AWS_ACCESS_KEY_ID,
+   aws_secret_access_key=AWS_SECRET_ACCESS_KEY
 )
 
 
